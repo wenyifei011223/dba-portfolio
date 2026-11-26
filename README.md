@@ -27,5 +27,11 @@ VMware Workstation + CentOS 7 + MySQL 8.0；Percona XtraBackup 8.0；Python 3.10
 - **主从复制**：GTID 自动定位 + 延迟演练 + 半同步（source_status=ON, clients=1）
 - **RAG**：文档入库与参数对比（进行中）
 
-## 博客文章
-- 待发布后回填
+## 博客文章（掘金，已发布 4 篇）
+
+| 文章 | 链接 | 对应实验 |
+|---|---|---|
+| 一次慢查询优化：从 512ms 到 0.0135ms，我把一条 SQL 提速了 3.8 万倍 | https://juejin.cn/post/7712130561377435684 | 笔记 06 / 实验 6 |
+| 误删表之后：mysqldump + binlog 时间点恢复实战（附完整排错） | https://juejin.cn/post/7712274520749375529 | 笔记 03 / 实验 3 |
+| MySQL 8 用户权限管理：从授权到越权验证 | https://juejin.cn/post/7712274520749408297 | 笔记 02 / 实验 2 |
+| CentOS 7 装 MySQL 8.0：EOL 之后的完整踩坑记录 | https://juejin.cn/post/7712359514977353769 | 笔记 01 / 实验 1 |
