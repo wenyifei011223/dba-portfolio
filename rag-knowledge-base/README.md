@@ -3,11 +3,21 @@
 > 定位（手册原话）：证明会 Python 和数据处理，能跑通 + 拿出参数对比表即可，不追求完美。
 > 技术栈：Python 3.10 + LangChain + Chroma + 本地 Embedding（all-MiniLM-L6-v2，免 API 费）+ LLM 二选一。
 
+## 〇、环境准备（动手前先看，三个卡点）
+
+| 卡点 | 现状（2026-11-27 自查） | 解决办法 |
+|---|---|---|
+| Python 版本 | 本机是 **3.13**，requirements 锁定依赖（chromadb 0.5.23 / torch）在 3.13 装不上 | **必须用 3.10**：装 Python 3.10 后 `py -3.10 -m venv venv`；或用 conda `conda create -n rag python=3.10` |
+| LLM 后端 | 本机无 Ollama、无 `DEEPSEEK_API_KEY` | 只想跑通/出参数表可**先用 `--no-llm`（默认），完全不需要 LLM**；要生成答案再二选一 |
+| HuggingFace 下载 | 国内直连 hf.co 常超时 | `config.py` 已设 `HF_ENDPOINT=https://hf-mirror.com`；如仍失败手动 `set HF_ENDPOINT=https://hf-mirror.com` |
+
+> **今天最短路径**：Python 3.10 建 venv → `pip install -r requirements.txt` → `python evaluate.py --quick`（3 组 × 5 题，约几分钟验证流程）→ 通过后跑完整 `python evaluate.py`。全程无需 key。
+
 ## 一、快速开始
 
 ```bash
 cd rag-knowledge-base
-python3 -m venv venv && source venv/bin/activate   # Windows: venv\Scripts\activate
+py -3.10 -m venv venv && venv\Scripts\activate   # 必须用 3.10，见第〇节
 pip install -r requirements.txt
 
 # 1) 放语料：把 8 篇笔记（md）或 PDF/DOCX 复制到 data/
@@ -18,8 +28,8 @@ python ingest.py
 python retrieve.py "MySQL 8 默认的认证插件是什么？" --no-llm
 
 # 4) 参数对比实验（先跑快速验证，再跑完整）
-python evaluate.py --quick          # 快速验证流程
-python evaluate.py                  # 完整 9 组参数，约 20–40 分钟
+python evaluate.py --quick          # 快速验证：只跑 chunk_size 的 3 组 × 5 题
+python evaluate.py                  # 完整 9 组 × 20 题，约 20–40 分钟
 python evaluate.py --with-llm       # 加 LLM 测准确率（需 key/Ollama，更慢）
 ```
 

@@ -42,18 +42,19 @@ QA_PAIRS = [
 ]
 
 
-def evaluate(chunk_size, chunk_overlap, top_k, tag, with_llm=False):
-    """跑一组参数，返回命中率/准确率/索引耗时/延迟。"""
+def evaluate(chunk_size, chunk_overlap, top_k, tag, with_llm=False, limit=None):
+    """跑一组参数，返回命中率/准确率/索引耗时/延迟。limit 用于 --quick 只跑前 N 题。"""
     db_dir = f"{config.DB_DIR}_{tag}"
     t0 = time.time()
     build(chunk_size, chunk_overlap, db_dir, rebuild=True)
     index_time = round(time.time() - t0, 2)
 
+    qa_pairs = QA_PAIRS[:limit] if limit else QA_PAIRS
     hit = correct = 0
     latencies = []
-    for q, keywords in QA_PAIRS:
+    for q, keywords in qa_pairs:
         r = answer(q, db_dir=db_dir, top_k=top_k, with_llm=with_llm)
-        context = " ".join(s[" snippet"] for s in r["sources"]).lower()
+        context = " ".join(s["snippet"] for s in r["sources"]).lower()
         if any(k.lower() in context for k in keywords):
             hit += 1
         if with_llm and r.get("answer") and any(k.lower() in r["answer"].lower() for k in keywords):
@@ -67,8 +68,8 @@ def evaluate(chunk_size, chunk_overlap, top_k, tag, with_llm=False):
         "chunk_size": chunk_size,
         "chunk_overlap": chunk_overlap,
         "top_k": top_k,
-        "hit_rate": round(hit / len(QA_PAIRS), 3),
-        "accuracy": round(correct / len(QA_PAIRS), 3) if with_llm else "N/A(未调LLM)",
+        "hit_rate": round(hit / len(qa_pairs), 3),
+        "accuracy": round(correct / len(qa_pairs), 3) if with_llm else "N/A(未调LLM)",
         "index_time_s": index_time,
         "avg_latency_s": avg_latency if avg_latency is not None else "N/A",
     }
@@ -115,9 +116,13 @@ if __name__ == "__main__":
         ("tk5", config.CHUNK_SIZE, config.CHUNK_OVERLAP, 5),
         ("tk10", config.CHUNK_SIZE, config.CHUNK_OVERLAP, 10),
     ]
+    if args.quick:
+        # 快速验证：只跑 chunk_size 的 3 组，每组前 5 题，先确认流程能跑通
+        groups = groups[:3]
+        print("[quick] 快速模式：仅跑 3 组 × 5 题，用于验证流程")
     for tag, cs, ov, tk in groups:
         print(f"\n>>> 跑参数组 {tag}: chunk_size={cs} overlap={ov} top_k={tk}")
-        r = evaluate(cs, ov, tk, tag, with_llm=args.with_llm)
+        r = evaluate(cs, ov, tk, tag, with_llm=args.with_llm, limit=5 if args.quick else None)
         results.append(r)
         print(r)
 

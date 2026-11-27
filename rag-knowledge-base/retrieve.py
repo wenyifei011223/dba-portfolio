@@ -13,10 +13,14 @@ import logging
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_community.retrievers import BM25Retriever
-from langchain_classic.retrievers import EnsembleRetriever
 from langchain_community.cross_encoders import HuggingFaceCrossEncoder
-from langchain_classic.retrievers.document_compressors import CrossEncoderReranker
-from langchain_classic.retrievers import ContextualCompressionRetriever
+# 兼容 langchain 0.3.x（官方路径）与 1.0+（迁到 langchain_classic 的路径）
+try:
+    from langchain.retrievers import EnsembleRetriever, ContextualCompressionRetriever
+    from langchain.retrievers.document_compressors import CrossEncoderReranker
+except ImportError:
+    from langchain_classic.retrievers import EnsembleRetriever, ContextualCompressionRetriever
+    from langchain_classic.retrievers.document_compressors import CrossEncoderReranker
 import config
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -80,7 +84,7 @@ def answer(question, db_dir=config.DB_DIR, top_k=config.TOP_K, with_llm=True):
         meta = d.metadata or {}
         sources.append({"source": meta.get("source", "unknown"),
                         "page": meta.get("page", "N/A"),
-                        " snippet": d.page_content[:150]})
+                        "snippet": d.page_content[:150]})
     context = "\n\n".join(d.page_content for d in docs)
 
     result = {"question": q.question, "sources": sources, "context_len": len(context)}
