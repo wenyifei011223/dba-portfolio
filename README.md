@@ -14,8 +14,9 @@ MySQL 运维实操 + 故障案例复盘 + RAG 知识库实践
 - `mysql-ops/05-replication/` 主从复制（GTID / 延迟 / 半同步）
 - `mysql-ops/06-slow-query/` 慢查询定位与优化（sysbench + EXPLAIN）
 - `mysql-ops/07-lock-deadlock/` 锁等待与死锁排查
-- `notes/` 故障复盘笔记（持续更新）
-- `rag-knowledge-base/` RAG 私有知识库（进行中）
+- `notes/` 故障复盘笔记（8 篇）
+- `scripts/check_mysql.sh` MySQL 监控脚本（磁盘/连接数/慢查询阈值告警）
+- `rag-knowledge-base/` RAG 私有知识库（骨架已就绪，待补 API key 与参数实验）
 
 ## 环境
 VMware Workstation + CentOS 7 + MySQL 8.0；Percona XtraBackup 8.0；Python 3.10 + LangChain
@@ -25,7 +26,7 @@ VMware Workstation + CentOS 7 + MySQL 8.0；Percona XtraBackup 8.0；Python 3.10
 - **压测基线**：8 线程 60 秒，TPS 467 / QPS 9345 / 95% 延迟 30.26ms
 - **备份恢复**：mysqldump + binlog PITR、XtraBackup 全量 + 增量恢复均已验证
 - **主从复制**：GTID 自动定位 + 延迟演练 + 半同步（source_status=ON, clients=1）
-- **RAG**：文档入库与参数对比（进行中）
+- **RAG**：LangChain + Chroma 知识库骨架（ingest/retrieve/evaluate），待实测参数对比表
 
 ## 博客文章（掘金，已发布 4 篇）
 

@@ -1,0 +1,18 @@
+# RAG 最小可运行版依赖（Python 3.10，本地 Embedding 免 API 费）
+# 注意：请务必用 Python 3.10，Python 3.13 下部分依赖装不上
+langchain==0.3.7
+langchain-community==0.3.7
+langchain-core==0.3.15
+langchain-classic==1.0.0        # 0.3.x 后 EnsembleRetriever/ContextualCompression 迁到这里
+langchain-text-splitters==0.3.5
+chromadb==0.5.23
+sentence-transformers==3.3.1
+rank-bm25==0.2.2
+pydantic==2.10.3
+tenacity==9.0.0
+pypdf==5.1.0
+python-docx==1.1.2
+pandas==2.2.3
+matplotlib==3.10.0
+# LLM 二选一：用 DeepSeek API 取消下一行注释；用 Ollama 则保持注释
+# openai==1.59.6

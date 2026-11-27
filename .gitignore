@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+*.egg-info/
+
+# RAG 运行时产物（向量库较大，不入库；评测结果保留）
+rag-knowledge-base/chroma_db*/
+rag-knowledge-base/data/*.pdf
+rag-knowledge-base/data/*.docx
+
+# 系统文件
+.DS_Store
+Thumbs.db
