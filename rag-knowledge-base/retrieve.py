@@ -91,7 +91,8 @@ def answer(question, db_dir=config.DB_DIR, top_k=config.TOP_K, with_llm=True):
                         "snippet": d.page_content[:150]})
     context = "\n\n".join(d.page_content for d in docs)
 
-    result = {"question": q.question, "sources": sources, "context_len": len(context)}
+    result = {"question": q.question, "sources": sources,
+              "context": context, "context_len": len(context)}
     if with_llm:
         prompt = f"基于以下资料回答问题，不要编造。资料：\n{context}\n\n问题：{q.question}\n答案："
         llm = make_llm()

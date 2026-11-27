@@ -1,7 +1,7 @@
 # 笔记 08：磁盘告警与连接数打满故障演练
 
-> 状态：**模板（待实测填充）**。实验 8 属手册标注的"可压缩"项，前 7 个实验完成后补做。
-> 实测时把真实报错原文贴进【实测证据】段，截图存 `mysql-ops/08-fault-drill/`。
+> 状态：**已实测（2026-11-27）**。通过 SSH 连接 node1 自动执行，真实命令输出存 `mysql-ops/08-fault-drill/exp8_evidence_*.txt`。
+> 实验 8 属手册标注的"可压缩"项，前 7 个实验完成后补做。
 
 ## 一、环境
 
@@ -55,12 +55,51 @@ mysql -uroot -pNewPass@123 -e "SET GLOBAL max_connections=200;"
 
 **截图**：S60-too-many-connections.png（`ERROR 1040 ... Too many connections` 原文）。
 
-## 四、【实测证据】（待填充）
+## 四、【实测证据】（2026-11-27 实测原文）
 
-- 磁盘满报错原文：
-- 连接打满报错原文：
-- `SHOW PROCESSLIST` 看到的来源：
-- 告警日志内容：
+**监控脚本告警日志（S58）**：
+```
+2026-11-27 09:06:57  [OK]  disk=11% conn=1 slow=0
+```
+
+**磁盘满报错原文（S59）**：
+```
+# 路径一：大排序写临时文件失败
+ERROR 3 (HY000) at line 1: Error writing file '/tmp/MYfd=38' (OS errno 28 - No space left on device)
+
+# 路径二：InnoDB 表空间无法扩展
+ERROR 1114 (HY000): The table 'sbtest_diskfull' is full
+
+# 填充后磁盘状态
+/dev/mapper/centos-root   46G   45G  196M  100% /
+
+# 定位大文件
+-rw-r--r--. 1 root root 41G /tmp/bigfile
+101M  #innodb_redo
+785M  mysql-bin.000011
+1.0G  sbtest
+```
+
+**连接打满报错原文（S60）**：
+```
+ERROR 1040 (HY000): Too many connections
+ERROR 1040 (HY000): Too many connections
+ERROR 1040 (HY000): Too many connections
+ERROR 1040 (HY000): Too many connections
+ERROR 1040 (HY000): Too many connections
+```
+
+**`SHOW PROCESSLIST` 看到的来源**：并发客户端连接被拒后，仅剩 event_scheduler 与当前查询连接，异常连接已被 MySQL 拒绝在门外：
+```
+Id  User   Host        Command  Time  State                 Info
+5   event_scheduler localhost Daemon  3825  Waiting on empty queue NULL
+30  root   localhost   Query    0     init                  SHOW PROCESSLIST
+```
+
+**关键参数复原**：`max_connections` 从 10 调回 200；binlog 过期从 30 天改为 7 天（`binlog_expire_logs_seconds=604800`）。
+
+> 完整原始输出：`mysql-ops/08-fault-drill/exp8_evidence_S58_S60.txt` 与 `exp8_evidence_S59.txt`。
+> 注：本机 SSH 系统 root 密码为 `root`（实验环境），MySQL root 密码为 `NewPass@123`。
 
 ## 五、面试重点
 

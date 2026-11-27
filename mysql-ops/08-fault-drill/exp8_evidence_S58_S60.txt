@@ -1,0 +1,32 @@
+实验 8 故障演练 - 真实命令输出记录
+执行时间: 2026-11-27 09:06:58
+主机: 192.168.88.128 (node1)
+
+--- S58: 监控脚本执行 ---
+$ bash /root/check_mysql.sh
+(无输出)
+
+$ cat /var/log/mysql_alert.log
+2026-11-27 09:06:57  [OK]  disk=11% conn=1 slow=0
+
+--- S60: 连接数打满 ---
+$ mysql -e "SHOW VARIABLES LIKE 'max_connections';"
+原始 max_connections = 200
+
+$ mysql -e "SET GLOBAL max_connections=10;"
+(设置成功，无输出)
+
+$ for i in $(seq 1 20); do mysql -uroot -pNewPass@123 -e "SELECT 1;" & done; wait
+并发连接报错（部分）:
+ERROR 1040 (HY000): Too many connections
+ERROR 1040 (HY000): Too many connections
+ERROR 1040 (HY000): Too many connections
+ERROR 1040 (HY000): Too many connections
+ERROR 1040 (HY000): Too many connections
+
+$ mysql -e "SHOW PROCESSLIST;"
+Id	User	Host	db	Command	Time	State	Info
+5	event_scheduler	localhost	NULL	Daemon	3825	Waiting on empty queue	NULL
+30	root	localhost	NULL	Query	0	init	SHOW PROCESSLIST
+
+$ 已调回 max_connections = 200

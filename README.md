@@ -26,7 +26,7 @@ VMware Workstation + CentOS 7 + MySQL 8.0；Percona XtraBackup 8.0；Python 3.10
 - **压测基线**：8 线程 60 秒，TPS 467 / QPS 9345 / 95% 延迟 30.26ms
 - **备份恢复**：mysqldump + binlog PITR、XtraBackup 全量 + 增量恢复均已验证
 - **主从复制**：GTID 自动定位 + 延迟演练 + 半同步（source_status=ON, clients=1）
-- **RAG**：LangChain + Chroma + 混合检索 + CrossEncoder 重排序，9 组参数对比实测（chunk_size 512 / overlap 100 / top_k 10 最优，命中率 0.75），结果见 `rag-knowledge-base/results/`
+- **RAG**：LangChain + Chroma + 混合检索 + CrossEncoder 重排序，9 组参数对比实测（chunk_size 1024 / overlap 0 / top_k 10 最优，命中率 0.85），结果见 `rag-knowledge-base/results/`
 
 ## 博客文章（掘金，已发布 4 篇）
 

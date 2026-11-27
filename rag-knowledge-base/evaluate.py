@@ -62,7 +62,8 @@ def evaluate(chunk_size, chunk_overlap, top_k, tag, with_llm=False, limit=None):
     latencies = []
     for q, keywords in qa_pairs:
         r = answer(q, db_dir=db_dir, top_k=top_k, with_llm=with_llm)
-        context = " ".join(s["snippet"] for s in r["sources"]).lower()
+        # 用完整检索上下文判断命中（snippet 仅前 150 字，关键词可能在片段后半被截断）
+        context = r.get("context", " ".join(s["snippet"] for s in r["sources"])).lower()
         if any(k.lower() in context for k in keywords):
             hit += 1
         if with_llm and r.get("answer") and any(k.lower() in r["answer"].lower() for k in keywords):

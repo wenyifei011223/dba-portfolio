@@ -1,0 +1,32 @@
+实验 8 - 磁盘打满演练 (S59)
+执行时间: 2026-11-27 09:10:46
+初始可用空间: 41493M
+
+$ df -h / （填充后）
+文件系统                 容量  已用  可用 已用% 挂载点
+/dev/mapper/centos-root   46G   45G  196M  100% /
+
+$ mysql -e "SELECT k,c,pad FROM sbtest.sbtest1 ORDER BY pad;"  (磁盘满时)
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 3 (HY000) at line 1: Error writing file '/tmp/MYfd=38' (OS errno 28 - No space left on device)
+
+$ mysql -e "INSERT INTO sbtest.sbtest1 ..." （重复写入直到磁盘满）
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1114 (HY000) at line 1: The table 'sbtest_diskfull' is full
+
+$ du -sh /var/lib/mysql/* | sort -h | tail -5
+32M	/var/lib/mysql/undo_001
+32M	/var/lib/mysql/undo_002
+101M	/var/lib/mysql/#innodb_redo
+785M	/var/lib/mysql/mysql-bin.000011
+1.0G	/var/lib/mysql/sbtest
+
+$ ls -lh /tmp/bigfile
+-rw-r--r--. 1 root root 41G 11月 27 09:11 /tmp/bigfile
+
+$ rm -f /tmp/bigfile 后
+文件系统                 容量  已用  可用 已用% 挂载点
+/dev/mapper/centos-root   46G  4.6G   41G   11% /
+
+$ SET GLOBAL binlog_expire_logs_seconds=604800
+确认: binlog_expire_logs_seconds	604800
