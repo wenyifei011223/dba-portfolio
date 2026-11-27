@@ -6,6 +6,8 @@ venv/
 
 # RAG 运行时产物（向量库较大，不入库；评测结果保留）
 rag-knowledge-base/chroma_db*/
+rag-knowledge-base/venv/
+rag-knowledge-base/results/run_full.log
 rag-knowledge-base/data/*.pdf
 rag-knowledge-base/data/*.docx
 

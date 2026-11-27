@@ -64,7 +64,7 @@ python evaluate.py --with-llm       # 加 LLM 测准确率（需 key/Ollama，�
 
 - `results/evaluation.csv` —— 9 组参数的命中率/索引耗时
 - `results/param_compare.png` —— 参数对比图（中文标题，可直接放简历）
-- `results/run_full.log` —— 完整运行日志（含"文档数 8 / 切块数 / 失败数 0"证据）
+- `results/run_summary.txt` —— 精简运行日志（含"文档数 8 / 切块数 / 失败数 0 / 9 组结果"证据）
 
 **实测基线**：8 篇笔记 → 切块数随 chunk_size 变化（256→220 / 512→89 / 1024→43），失败数 0。
 9 组 20 题的命中率：

@@ -1,0 +1,56 @@
+>>> 跑参数组 cs256: chunk_size=256 overlap=100 top_k=5
+文档数: 8
+切块数: 220  (chunk_size=256, overlap=100)
+失败数: 0
+向量库: chroma_db_cs256
+{'group': 'cs256', 'chunk_size': 256, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.55, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 15.98, 'avg_latency_s': 'N/A'}
+>>> 跑参数组 cs512: chunk_size=512 overlap=100 top_k=5
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_cs512
+{'group': 'cs512', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.6, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 2.56, 'avg_latency_s': 'N/A'}
+>>> 跑参数组 cs1024: chunk_size=1024 overlap=100 top_k=5
+文档数: 8
+切块数: 43  (chunk_size=1024, overlap=100)
+失败数: 0
+向量库: chroma_db_cs1024
+{'group': 'cs1024', 'chunk_size': 1024, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.5, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 1.91, 'avg_latency_s': 'N/A'}
+>>> 跑参数组 ov0: chunk_size=512 overlap=0 top_k=5
+文档数: 8
+切块数: 80  (chunk_size=512, overlap=0)
+失败数: 0
+向量库: chroma_db_ov0
+{'group': 'ov0', 'chunk_size': 512, 'chunk_overlap': 0, 'top_k': 5, 'hit_rate': 0.5, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 1.92, 'avg_latency_s': 'N/A'}
+>>> 跑参数组 ov100: chunk_size=512 overlap=100 top_k=5
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_ov100
+{'group': 'ov100', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.6, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 2.05, 'avg_latency_s': 'N/A'}
+>>> 跑参数组 ov200: chunk_size=512 overlap=200 top_k=5
+文档数: 8
+切块数: 113  (chunk_size=512, overlap=200)
+失败数: 0
+向量库: chroma_db_ov200
+{'group': 'ov200', 'chunk_size': 512, 'chunk_overlap': 200, 'top_k': 5, 'hit_rate': 0.5, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 2.48, 'avg_latency_s': 'N/A'}
+>>> 跑参数组 tk3: chunk_size=512 overlap=100 top_k=3
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_tk3
+{'group': 'tk3', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 3, 'hit_rate': 0.55, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 2.09, 'avg_latency_s': 'N/A'}
+>>> 跑参数组 tk5: chunk_size=512 overlap=100 top_k=5
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_tk5
+{'group': 'tk5', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.6, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 1.97, 'avg_latency_s': 'N/A'}
+>>> 跑参数组 tk10: chunk_size=512 overlap=100 top_k=10
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_tk10
+{'group': 'tk10', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 10, 'hit_rate': 0.75, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 1.98, 'avg_latency_s': 'N/A'}
+结果表已保存: results\evaluation.csv
+对比图已保存: results\param_compare.png
