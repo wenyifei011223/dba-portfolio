@@ -1,0 +1,10 @@
+﻿group,chunk_size,chunk_overlap,top_k,hit_rate,accuracy,index_time_s,avg_latency_s
+cs256,256,100,5,0.55,N/A(未调LLM),15.98,N/A
+cs512,512,100,5,0.6,N/A(未调LLM),2.56,N/A
+cs1024,1024,100,5,0.5,N/A(未调LLM),1.91,N/A
+ov0,512,0,5,0.5,N/A(未调LLM),1.92,N/A
+ov100,512,100,5,0.6,N/A(未调LLM),2.05,N/A
+ov200,512,200,5,0.5,N/A(未调LLM),2.48,N/A
+tk3,512,100,3,0.55,N/A(未调LLM),2.09,N/A
+tk5,512,100,5,0.6,N/A(未调LLM),1.97,N/A
+tk10,512,100,10,0.75,N/A(未调LLM),1.98,N/A

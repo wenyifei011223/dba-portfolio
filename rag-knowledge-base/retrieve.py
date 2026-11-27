@@ -4,6 +4,7 @@ retrieve.py —— 检索 + 答案生成
 Agent 工具链：Pydantic 参数校验 + tenacity 失败重试 + 异常捕获（打印重试日志）。
 LLM 二选一：DeepSeek API / Ollama 本地，由 config.LLM_BACKEND 控制。
 """
+import os
 import time
 import argparse
 from pydantic import BaseModel, Field
@@ -54,7 +55,9 @@ def call_llm(llm, prompt):
 
 
 def build_retriever(db_dir, top_k):
-    embeddings = HuggingFaceEmbeddings(model_name=config.EMBEDDING_MODEL)
+    # 与 ingest.py 保持一致：优先魔搭本地路径，无缓存时回退 HF model id
+    model_path = config.LOCAL_EMBEDDING_PATH if os.path.isdir(config.LOCAL_EMBEDDING_PATH) else config.EMBEDDING_MODEL
+    embeddings = HuggingFaceEmbeddings(model_name=model_path)
     vectordb = Chroma(collection_name=config.COLLECTION, embedding_function=embeddings,
                       persist_directory=db_dir)
 
@@ -67,8 +70,9 @@ def build_retriever(db_dir, top_k):
     vector = vectordb.as_retriever(search_kwargs={"k": top_k})
     ensemble = EnsembleRetriever(retrievers=[vector, bm25], weights=[0.6, 0.4])
 
-    # CrossEncoder 重排序
-    compressor = CrossEncoderReranker(model=HuggingFaceCrossEncoder(model_name="cross-encoder/ms-marco-MiniLM-L-6-v2"),
+    # CrossEncoder 重排序（同样优先魔搭本地路径）
+    rerank_path = config.LOCAL_RERANK_PATH if os.path.isdir(config.LOCAL_RERANK_PATH) else "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    compressor = CrossEncoderReranker(model=HuggingFaceCrossEncoder(model_name=rerank_path),
                                       top_n=min(top_k, config.RERANK_TOP_N))
     return ContextualCompressionRetriever(base_compressor=compressor, base_retriever=ensemble)
 

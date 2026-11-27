@@ -1,0 +1,1237 @@
+
+>>> 跑参数组 cs256: chunk_size=256 overlap=100 top_k=5
+[info] Embedding 模型来源: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+C:\Users\PC\Desktop\准备材料\dba-portfolio\rag-knowledge-base\ingest.py:67: LangChainDeprecationWarning: The class `HuggingFaceEmbeddings` was deprecated in LangChain 0.2.2 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-huggingface package and should be used instead. To use it run `pip install -U :class:`~langchain-huggingface` and import as `from :class:`~langchain_huggingface import HuggingFaceEmbeddings``.
+  embeddings = HuggingFaceEmbeddings(model_name=model_path)
+2026-11-27 09:00:02,222 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:02,224 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:04,758 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:04,791 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+==================================================
+文档数: 8
+切块数: 220  (chunk_size=256, overlap=100)
+失败数: 0
+向量库: chroma_db_cs256
+==================================================
+2026-11-27 09:00:08,410 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:08,410 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+C:\Users\PC\Desktop\准备材料\dba-portfolio\rag-knowledge-base\retrieve.py:61: LangChainDeprecationWarning: The class `Chroma` was deprecated in LangChain 0.2.9 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-chroma package and should be used instead. To use it run `pip install -U :class:`~langchain-chroma` and import as `from :class:`~langchain_chroma import Chroma``.
+  vectordb = Chroma(collection_name=config.COLLECTION, embedding_function=embeddings,
+2026-11-27 09:00:08,488 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:08,490 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:08,491 ERROR Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:08,565 INFO Use pytorch device: cpu
+2026-11-27 09:00:08,617 ERROR Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.05it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.05it/s]
+2026-11-27 09:00:08,773 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:08,773 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:08,835 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:08,837 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:08,891 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.25it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.25it/s]
+2026-11-27 09:00:09,057 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:09,057 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:09,119 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:09,121 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:09,180 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.61it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.61it/s]
+2026-11-27 09:00:09,341 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:09,341 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:09,404 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:09,405 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:09,466 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.29it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.25it/s]
+2026-11-27 09:00:09,604 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:09,604 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:09,667 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:09,669 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:09,725 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.49it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.47it/s]
+2026-11-27 09:00:09,887 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:09,887 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:09,950 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:09,951 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:10,008 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.47it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.44it/s]
+2026-11-27 09:00:10,170 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:10,171 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:10,237 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:10,239 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:10,429 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.57it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.57it/s]
+2026-11-27 09:00:10,612 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:10,612 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:10,675 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:10,677 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:10,735 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.79it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.79it/s]
+2026-11-27 09:00:10,912 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:10,912 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:10,974 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:10,976 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:11,032 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.30it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.30it/s]
+2026-11-27 09:00:11,219 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:11,219 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:11,281 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:11,282 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:11,341 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.88it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.88it/s]
+2026-11-27 09:00:11,515 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:11,515 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:11,577 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:11,579 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:11,636 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.61it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.61it/s]
+2026-11-27 09:00:11,815 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:11,816 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:11,878 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:11,879 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:11,936 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.47it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.44it/s]
+2026-11-27 09:00:12,082 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:12,082 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:12,144 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:12,146 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:12,202 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.12it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.12it/s]
+2026-11-27 09:00:12,371 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:12,371 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:12,432 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:12,434 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:12,490 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.94it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.94it/s]
+2026-11-27 09:00:12,644 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:12,645 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:12,707 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:12,709 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:12,765 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.30it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.30it/s]
+2026-11-27 09:00:12,914 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:12,914 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:12,977 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:12,978 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:13,036 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.30it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.26it/s]
+2026-11-27 09:00:13,186 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:13,186 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:13,248 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:13,250 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:13,307 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.70it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.68it/s]
+2026-11-27 09:00:13,485 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:13,486 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:13,549 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:13,551 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:13,608 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.07it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.07it/s]
+2026-11-27 09:00:13,778 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:13,778 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:13,841 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:13,843 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:13,898 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.51it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.51it/s]
+2026-11-27 09:00:14,031 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:14,031 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:14,094 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:14,096 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:14,152 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.67it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.64it/s]
+{'group': 'cs256', 'chunk_size': 256, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.55, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 15.98, 'avg_latency_s': 'N/A'}
+
+>>> 跑参数组 cs512: chunk_size=512 overlap=100 top_k=5
+[info] Embedding 模型来源: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:14,807 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:14,807 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:15,234 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:15,255 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+==================================================
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_cs512
+==================================================
+2026-11-27 09:00:16,872 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:16,872 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:16,946 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:16,948 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:16,948 ERROR Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:16,999 INFO Use pytorch device: cpu
+2026-11-27 09:00:17,014 ERROR Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.31it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.31it/s]
+2026-11-27 09:00:17,260 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:17,260 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:17,324 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:17,326 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:17,379 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.72it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.72it/s]
+2026-11-27 09:00:17,619 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:17,619 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:17,683 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:17,685 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:17,739 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.13it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.13it/s]
+2026-11-27 09:00:18,087 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:18,087 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:18,150 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:18,152 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:18,207 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.68it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.68it/s]
+2026-11-27 09:00:18,387 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:18,387 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:18,451 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:18,453 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:18,507 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.51it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.50it/s]
+2026-11-27 09:00:18,822 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:18,822 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:18,884 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:18,886 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:18,941 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.91it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.90it/s]
+2026-11-27 09:00:19,225 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:19,225 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:19,291 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:19,292 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:19,348 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.03it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.03it/s]
+2026-11-27 09:00:19,624 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:19,624 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:19,686 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:19,687 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:19,743 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.35it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.35it/s]
+2026-11-27 09:00:20,068 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:20,068 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:20,131 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:20,132 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:20,187 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.45it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.45it/s]
+2026-11-27 09:00:20,439 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:20,439 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:20,501 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:20,503 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:20,559 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.72it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.72it/s]
+2026-11-27 09:00:20,857 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:20,857 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:20,921 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:20,922 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:20,975 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.54it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.54it/s]
+2026-11-27 09:00:21,286 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:21,286 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:21,349 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:21,351 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:21,403 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.15it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.14it/s]
+2026-11-27 09:00:21,672 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:21,672 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:21,738 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:21,739 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:21,794 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.79it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.78it/s]
+2026-11-27 09:00:22,087 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:22,087 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:22,150 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:22,152 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:22,208 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.68it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.67it/s]
+2026-11-27 09:00:22,450 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:22,450 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:22,512 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:22,514 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:22,572 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.50it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.49it/s]
+2026-11-27 09:00:22,886 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:22,886 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:22,948 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:22,949 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:23,002 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.68it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.68it/s]
+2026-11-27 09:00:23,302 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:23,302 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:23,365 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:23,367 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:23,421 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.73it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.73it/s]
+2026-11-27 09:00:23,718 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:23,718 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:23,782 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:23,783 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:23,837 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.80it/s]
+2026-11-27 09:00:24,129 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:24,129 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:24,195 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:24,196 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:24,251 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.31it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.31it/s]
+2026-11-27 09:00:24,511 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:24,511 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:24,574 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:24,576 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:24,631 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.98it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.97it/s]
+{'group': 'cs512', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.6, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 2.56, 'avg_latency_s': 'N/A'}
+
+>>> 跑参数组 cs1024: chunk_size=1024 overlap=100 top_k=5
+[info] Embedding 模型来源: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:25,400 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:25,400 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:25,812 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:25,832 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+==================================================
+文档数: 8
+切块数: 43  (chunk_size=1024, overlap=100)
+失败数: 0
+向量库: chroma_db_cs1024
+==================================================
+2026-11-27 09:00:26,823 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:26,823 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:26,886 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:26,888 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:26,889 ERROR Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:26,938 INFO Use pytorch device: cpu
+2026-11-27 09:00:26,952 ERROR Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.86it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.86it/s]
+2026-11-27 09:00:27,225 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:27,225 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:27,293 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:27,294 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:27,348 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.22it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.22it/s]
+2026-11-27 09:00:27,686 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:27,686 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:27,750 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:27,752 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:27,807 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.25it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.25it/s]
+2026-11-27 09:00:28,143 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:28,143 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:28,207 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:28,209 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:28,267 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.22it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.22it/s]
+2026-11-27 09:00:28,606 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:28,606 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:28,672 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:28,673 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:28,728 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.86it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.86it/s]
+2026-11-27 09:00:29,105 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:29,105 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:29,175 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:29,176 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:29,228 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.88it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.88it/s]
+2026-11-27 09:00:29,605 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:29,605 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:29,674 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:29,676 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:29,729 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.93it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.93it/s]
+2026-11-27 09:00:30,098 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:30,098 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:30,163 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:30,164 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:30,216 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.64it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.63it/s]
+2026-11-27 09:00:30,625 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:30,625 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:30,692 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:30,693 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:30,745 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.90it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.90it/s]
+2026-11-27 09:00:31,118 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:31,119 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:31,187 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:31,189 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:31,241 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.92it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.92it/s]
+2026-11-27 09:00:31,610 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:31,610 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:31,678 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:31,679 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:31,732 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.63it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.62it/s]
+2026-11-27 09:00:32,141 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:32,141 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:32,205 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:32,207 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:32,259 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.65it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.65it/s]
+2026-11-27 09:00:32,665 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:32,665 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:32,732 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:32,734 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:32,787 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.31it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.31it/s]
+2026-11-27 09:00:33,117 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:33,117 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:33,184 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:33,186 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:33,240 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.69it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.69it/s]
+2026-11-27 09:00:33,539 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:33,539 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:33,604 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:33,605 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:33,660 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.49it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.49it/s]
+2026-11-27 09:00:33,911 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:33,911 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:33,976 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:33,978 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:34,031 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.04it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.04it/s]
+2026-11-27 09:00:34,388 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:34,388 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:34,452 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:34,454 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:34,506 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.06it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.06it/s]
+2026-11-27 09:00:34,860 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:34,860 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:34,927 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:34,928 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:34,984 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.34it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.34it/s]
+2026-11-27 09:00:35,312 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:35,312 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:35,377 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:35,379 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:35,433 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.66it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.65it/s]
+2026-11-27 09:00:35,837 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:35,837 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:35,902 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:35,903 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:35,956 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.26it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.26it/s]
+{'group': 'cs1024', 'chunk_size': 1024, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.5, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 1.91, 'avg_latency_s': 'N/A'}
+
+>>> 跑参数组 ov0: chunk_size=512 overlap=0 top_k=5
+[info] Embedding 模型来源: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:36,296 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:36,296 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:36,692 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:36,713 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+==================================================
+文档数: 8
+切块数: 80  (chunk_size=512, overlap=0)
+失败数: 0
+向量库: chroma_db_ov0
+==================================================
+2026-11-27 09:00:38,208 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:38,208 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:38,277 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:38,278 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:38,279 ERROR Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:38,336 INFO Use pytorch device: cpu
+2026-11-27 09:00:38,352 ERROR Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.43it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.43it/s]
+2026-11-27 09:00:38,657 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:38,657 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:38,723 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:38,724 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:38,779 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.72it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.71it/s]
+2026-11-27 09:00:39,020 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:39,021 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:39,085 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:39,087 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:39,140 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.09it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.09it/s]
+2026-11-27 09:00:39,333 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:39,333 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:39,397 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:39,399 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:39,454 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.79it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.77it/s]
+2026-11-27 09:00:39,629 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:39,629 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:39,696 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:39,698 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:39,753 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.47it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.46it/s]
+2026-11-27 09:00:40,004 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:40,005 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:40,066 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:40,068 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:40,123 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.37it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.37it/s]
+2026-11-27 09:00:40,379 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:40,379 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:40,442 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:40,443 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:40,505 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.27it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.26it/s]
+2026-11-27 09:00:40,769 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:40,770 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:40,832 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:40,834 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:40,888 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.89it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.89it/s]
+2026-11-27 09:00:41,120 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:41,120 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:41,182 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:41,184 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:41,239 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.95it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.95it/s]
+2026-11-27 09:00:41,469 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:41,469 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:41,530 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:41,532 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:41,587 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.47it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.47it/s]
+2026-11-27 09:00:41,838 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:41,838 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:41,904 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:41,906 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:41,962 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.05it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.05it/s]
+2026-11-27 09:00:42,237 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:42,237 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:42,299 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:42,300 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:42,355 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.87it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.86it/s]
+2026-11-27 09:00:42,642 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:42,642 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:42,706 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:42,707 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:42,761 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.43it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.42it/s]
+2026-11-27 09:00:43,080 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:43,080 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:43,144 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:43,146 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:43,200 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.43it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.43it/s]
+2026-11-27 09:00:43,454 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:43,454 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:43,518 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:43,520 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:43,574 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.14it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.13it/s]
+2026-11-27 09:00:43,843 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:43,843 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:43,911 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:43,913 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:43,966 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.66it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.66it/s]
+2026-11-27 09:00:44,209 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:44,209 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:44,271 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:44,273 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:44,327 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.08it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.08it/s]
+2026-11-27 09:00:44,600 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:44,600 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:44,663 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:44,664 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:44,933 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.79it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.79it/s]
+2026-11-27 09:00:45,170 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:45,171 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:45,233 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:45,235 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:45,290 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.88it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.88it/s]
+2026-11-27 09:00:45,522 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:45,522 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:45,584 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:45,586 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:45,641 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.65it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.63it/s]
+{'group': 'ov0', 'chunk_size': 512, 'chunk_overlap': 0, 'top_k': 5, 'hit_rate': 0.5, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 1.92, 'avg_latency_s': 'N/A'}
+
+>>> 跑参数组 ov100: chunk_size=512 overlap=100 top_k=5
+[info] Embedding 模型来源: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:45,896 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:45,896 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:46,274 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:46,294 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+==================================================
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_ov100
+==================================================
+2026-11-27 09:00:47,937 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:47,937 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:48,007 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:48,008 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:48,009 ERROR Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:48,062 INFO Use pytorch device: cpu
+2026-11-27 09:00:48,076 ERROR Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.22it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.21it/s]
+2026-11-27 09:00:48,328 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:48,328 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:48,391 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:48,393 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:48,449 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.17it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.16it/s]
+2026-11-27 09:00:48,718 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:48,718 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:48,782 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:48,784 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:48,839 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.24it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.24it/s]
+2026-11-27 09:00:49,104 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:49,105 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:49,168 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:49,169 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:49,226 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.24it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.22it/s]
+2026-11-27 09:00:49,415 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:49,415 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:49,482 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:49,484 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:49,539 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.51it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.51it/s]
+2026-11-27 09:00:49,853 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:49,853 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:49,919 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:49,921 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:49,974 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.25it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.25it/s]
+2026-11-27 09:00:50,312 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:50,312 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:50,381 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:50,383 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:50,436 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.17it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.17it/s]
+2026-11-27 09:00:50,704 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:50,704 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:50,768 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:50,770 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:50,825 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.53it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.53it/s]
+2026-11-27 09:00:51,137 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:51,137 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:51,200 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:51,202 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:51,263 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.39it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.38it/s]
+2026-11-27 09:00:51,519 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:51,519 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:51,581 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:51,582 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:51,638 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.65it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.65it/s]
+2026-11-27 09:00:51,940 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:51,940 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:52,010 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:52,012 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:52,065 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.39it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.38it/s]
+2026-11-27 09:00:52,389 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:52,389 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:52,452 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:52,453 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:52,508 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.56it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.56it/s]
+2026-11-27 09:00:52,817 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:52,818 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:52,885 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:52,887 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:52,944 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.13it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.13it/s]
+2026-11-27 09:00:53,293 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:53,293 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:53,357 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:53,358 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:53,415 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.11it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.11it/s]
+2026-11-27 09:00:53,686 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:53,686 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:53,751 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:53,753 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:53,808 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.61it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.61it/s]
+2026-11-27 09:00:54,113 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:54,113 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:54,177 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:54,178 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:54,234 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.09it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.09it/s]
+2026-11-27 09:00:54,507 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:54,507 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:54,574 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:54,575 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:54,632 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.70it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.69it/s]
+2026-11-27 09:00:54,931 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:54,931 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:54,995 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:54,997 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:55,052 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.78it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.77it/s]
+2026-11-27 09:00:55,345 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:55,345 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:55,407 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:55,409 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:55,466 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.46it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.46it/s]
+2026-11-27 09:00:55,718 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:55,718 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:55,781 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:55,783 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:55,840 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.82it/s]
+{'group': 'ov100', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.6, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 2.05, 'avg_latency_s': 'N/A'}
+
+>>> 跑参数组 ov200: chunk_size=512 overlap=200 top_k=5
+[info] Embedding 模型来源: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:56,137 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:56,137 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:56,515 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:56,535 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+==================================================
+文档数: 8
+切块数: 113  (chunk_size=512, overlap=200)
+失败数: 0
+向量库: chroma_db_ov200
+==================================================
+2026-11-27 09:00:58,607 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:58,607 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:58,682 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:58,684 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:58,685 ERROR Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:58,738 INFO Use pytorch device: cpu
+2026-11-27 09:00:58,752 ERROR Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.70it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.69it/s]
+2026-11-27 09:00:58,978 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:58,978 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:59,041 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:59,043 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:59,099 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.80it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.80it/s]
+2026-11-27 09:00:59,336 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:59,336 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:59,397 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:59,399 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:59,456 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.47it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.47it/s]
+2026-11-27 09:00:59,708 INFO Use pytorch device_name: cpu
+2026-11-27 09:00:59,708 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:00:59,770 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:59,772 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:00:59,828 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.70it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.68it/s]
+2026-11-27 09:01:00,007 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:00,007 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:00,070 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:00,071 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:00,127 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.23it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.23it/s]
+2026-11-27 09:01:00,466 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:00,466 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:00,532 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:00,533 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:00,589 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.02it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.01it/s]
+2026-11-27 09:01:00,867 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:00,867 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:00,934 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:00,936 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:00,992 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]
+2026-11-27 09:01:01,294 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:01,294 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:01,357 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:01,358 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:01,411 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.75it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.75it/s]
+2026-11-27 09:01:01,706 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:01,706 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:01,771 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:01,773 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:01,834 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.78it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.78it/s]
+2026-11-27 09:01:02,224 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:02,224 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:02,291 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:02,293 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:02,353 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.63it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.63it/s]
+2026-11-27 09:01:02,777 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:02,777 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:02,846 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:02,848 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:02,907 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.94it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.93it/s]
+2026-11-27 09:01:03,288 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:03,288 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:03,354 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:03,355 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:03,411 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.00it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.00it/s]
+2026-11-27 09:01:03,639 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:03,639 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:03,706 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:03,708 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:03,765 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.75it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.75it/s]
+2026-11-27 09:01:04,059 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:04,059 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:04,121 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:04,122 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:04,178 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.00it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.00it/s]
+2026-11-27 09:01:04,406 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:04,406 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:04,468 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:04,470 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:04,526 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.96it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.95it/s]
+2026-11-27 09:01:04,806 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:04,806 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:04,869 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:04,871 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:05,150 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.11it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.11it/s]
+2026-11-27 09:01:05,421 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:05,421 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:05,483 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:05,485 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:05,542 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.87it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.87it/s]
+2026-11-27 09:01:05,828 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:05,828 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:05,892 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:05,893 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:05,950 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.23it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.23it/s]
+2026-11-27 09:01:06,215 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:06,215 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:06,281 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:06,282 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:06,339 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.93it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.92it/s]
+2026-11-27 09:01:06,570 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:06,570 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:06,632 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:06,634 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:06,690 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.98it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.98it/s]
+{'group': 'ov200', 'chunk_size': 512, 'chunk_overlap': 200, 'top_k': 5, 'hit_rate': 0.5, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 2.48, 'avg_latency_s': 'N/A'}
+
+>>> 跑参数组 tk3: chunk_size=512 overlap=100 top_k=3
+[info] Embedding 模型来源: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:06,924 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:06,924 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:07,301 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:07,322 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+==================================================
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_tk3
+==================================================
+2026-11-27 09:01:09,013 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:09,014 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:09,083 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:09,085 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:09,085 ERROR Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:09,137 INFO Use pytorch device: cpu
+2026-11-27 09:01:09,151 ERROR Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.83it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.81it/s]
+2026-11-27 09:01:09,337 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:09,337 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:09,400 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:09,402 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:09,454 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.91it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.88it/s]
+2026-11-27 09:01:09,608 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:09,609 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:09,677 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:09,678 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:09,733 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.81it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.81it/s]
+2026-11-27 09:01:09,889 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:09,890 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:09,953 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:09,955 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:10,010 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.69it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.65it/s]
+2026-11-27 09:01:10,154 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:10,154 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:10,218 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:10,219 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:10,274 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.09it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.09it/s]
+2026-11-27 09:01:10,466 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:10,467 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:10,531 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:10,532 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:10,585 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.40it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.40it/s]
+2026-11-27 09:01:10,769 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:10,769 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:10,833 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:10,834 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:10,888 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.47it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.47it/s]
+2026-11-27 09:01:11,033 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:11,033 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:11,106 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:11,108 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:11,168 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.59it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.59it/s]
+2026-11-27 09:01:11,355 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:11,355 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:11,423 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:11,425 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:11,478 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.09it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.07it/s]
+2026-11-27 09:01:11,670 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:11,670 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:11,734 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:11,736 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:11,790 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.30it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.30it/s]
+2026-11-27 09:01:11,955 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:11,955 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:12,018 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:12,020 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:12,074 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.36it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.36it/s]
+2026-11-27 09:01:12,288 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:12,288 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:12,352 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:12,354 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:12,410 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.96it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.96it/s]
+2026-11-27 09:01:12,605 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:12,605 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:12,667 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:12,669 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:12,724 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.96it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.96it/s]
+2026-11-27 09:01:12,919 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:12,919 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:12,985 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:12,986 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:13,043 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.80it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.79it/s]
+2026-11-27 09:01:13,280 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:13,280 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:13,346 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:13,348 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:13,403 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.18it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.18it/s]
+2026-11-27 09:01:13,592 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:13,592 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:13,655 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:13,657 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:13,710 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.33it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.33it/s]
+2026-11-27 09:01:13,874 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:13,874 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:13,937 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:13,939 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:13,994 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.73it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.73it/s]
+2026-11-27 09:01:14,195 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:14,195 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:14,258 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:14,260 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:14,314 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.59it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.57it/s]
+2026-11-27 09:01:14,494 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:14,494 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:14,556 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:14,558 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:14,613 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.10it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.10it/s]
+2026-11-27 09:01:14,764 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:14,764 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:14,826 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:14,828 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:14,883 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.44it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.41it/s]
+{'group': 'tk3', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 3, 'hit_rate': 0.55, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 2.09, 'avg_latency_s': 'N/A'}
+
+>>> 跑参数组 tk5: chunk_size=512 overlap=100 top_k=5
+[info] Embedding 模型来源: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:15,051 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:15,051 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:15,424 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:15,444 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+==================================================
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_tk5
+==================================================
+2026-11-27 09:01:17,019 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:17,019 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:17,089 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:17,091 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:17,092 ERROR Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:17,145 INFO Use pytorch device: cpu
+2026-11-27 09:01:17,159 ERROR Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.47it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.46it/s]
+2026-11-27 09:01:17,397 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:17,397 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:17,461 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:17,463 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:17,515 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.13it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.13it/s]
+2026-11-27 09:01:17,737 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:17,737 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:17,801 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:17,802 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:17,855 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.20it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.19it/s]
+2026-11-27 09:01:18,121 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:18,121 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:18,189 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:18,191 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:18,244 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.68it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.65it/s]
+2026-11-27 09:01:18,423 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:18,423 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:18,485 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:18,486 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:18,541 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.99it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.99it/s]
+2026-11-27 09:01:18,819 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:18,819 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:18,881 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:18,882 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:18,941 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.70it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.70it/s]
+2026-11-27 09:01:19,240 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:19,240 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:19,313 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:19,315 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:19,373 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.54it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.54it/s]
+2026-11-27 09:01:19,621 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:19,621 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:19,684 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:19,686 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:19,740 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.09it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.08it/s]
+2026-11-27 09:01:20,013 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:20,013 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:20,074 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:20,076 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:20,131 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.53it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.52it/s]
+2026-11-27 09:01:20,381 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:20,381 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:20,447 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:20,448 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:20,503 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.87it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.86it/s]
+2026-11-27 09:01:20,790 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:20,790 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:21,062 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:21,064 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:21,116 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.26it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.26it/s]
+2026-11-27 09:01:21,454 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:21,454 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:21,517 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:21,519 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:21,575 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.42it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.42it/s]
+2026-11-27 09:01:21,829 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:21,829 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:21,890 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:21,892 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:21,946 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.91it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.91it/s]
+2026-11-27 09:01:22,230 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:22,230 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:22,292 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:22,294 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:22,349 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.93it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.92it/s]
+2026-11-27 09:01:22,580 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:22,580 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:22,642 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:22,644 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:22,699 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.68it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.67it/s]
+2026-11-27 09:01:23,000 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:23,000 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:23,067 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:23,068 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:23,123 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.83it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.83it/s]
+2026-11-27 09:01:23,413 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:23,413 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:23,476 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:23,478 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:23,533 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.02it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.02it/s]
+2026-11-27 09:01:23,809 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:23,809 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:23,872 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:23,874 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:23,930 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.45it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.44it/s]
+2026-11-27 09:01:24,249 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:24,249 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:24,312 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:24,314 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:24,369 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.83it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.83it/s]
+2026-11-27 09:01:24,604 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:24,604 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:24,667 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:24,669 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:24,725 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.26it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.25it/s]
+{'group': 'tk5', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 5, 'hit_rate': 0.6, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 1.97, 'avg_latency_s': 'N/A'}
+
+>>> 跑参数组 tk10: chunk_size=512 overlap=100 top_k=10
+[info] Embedding 模型来源: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:25,000 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:25,000 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:25,366 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:25,387 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+==================================================
+文档数: 8
+切块数: 89  (chunk_size=512, overlap=100)
+失败数: 0
+向量库: chroma_db_tk10
+==================================================
+2026-11-27 09:01:26,969 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:26,969 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:27,041 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:27,043 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:27,044 ERROR Failed to send telemetry event CollectionGetEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:27,099 INFO Use pytorch device: cpu
+2026-11-27 09:01:27,113 ERROR Failed to send telemetry event CollectionQueryEvent: capture() takes 1 positional argument but 3 were given
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.31it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.31it/s]
+2026-11-27 09:01:27,560 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:27,560 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:27,628 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:27,630 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:27,684 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.50it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.49it/s]
+2026-11-27 09:01:28,116 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:28,116 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:28,185 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:28,187 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:28,242 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.36it/s]
+2026-11-27 09:01:28,695 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:28,695 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:28,764 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:28,766 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:28,821 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.22it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.22it/s]
+2026-11-27 09:01:29,302 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:29,302 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:29,377 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:29,379 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:29,434 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.00it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.00it/s]
+2026-11-27 09:01:29,963 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:29,963 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:30,035 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:30,037 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:30,090 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.06it/s]
+2026-11-27 09:01:30,604 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:30,604 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:30,669 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:30,671 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:30,728 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.02it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.02it/s]
+2026-11-27 09:01:31,251 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:31,251 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:31,318 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:31,319 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:31,374 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.02it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.02it/s]
+2026-11-27 09:01:31,898 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:31,898 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:31,963 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:31,965 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:32,023 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.30it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.29it/s]
+2026-11-27 09:01:32,487 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:32,487 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:32,555 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:32,556 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:32,609 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.07it/s]
+2026-11-27 09:01:33,120 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:33,120 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:33,189 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:33,191 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:33,251 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.22it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.22it/s]
+2026-11-27 09:01:33,730 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:33,730 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:33,795 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:33,796 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:33,853 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.24it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.24it/s]
+2026-11-27 09:01:34,326 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:34,327 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:34,393 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:34,395 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:34,454 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.99it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.99it/s]
+2026-11-27 09:01:34,983 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:34,983 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:35,048 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:35,049 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:35,107 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.38it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.38it/s]
+2026-11-27 09:01:35,556 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:35,556 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:35,622 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:35,623 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:35,676 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.19it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.19it/s]
+2026-11-27 09:01:36,161 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:36,161 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:36,227 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:36,229 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:36,283 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.91it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.91it/s]
+2026-11-27 09:01:36,835 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:36,835 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:36,903 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:36,905 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:36,963 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.57it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.57it/s]
+2026-11-27 09:01:37,380 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:37,380 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:37,448 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:37,450 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:37,503 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.87it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.87it/s]
+2026-11-27 09:01:38,067 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:38,068 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:38,130 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:38,132 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:38,191 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.27it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.27it/s]
+2026-11-27 09:01:38,660 INFO Use pytorch device_name: cpu
+2026-11-27 09:01:38,660 INFO Load pretrained SentenceTransformer: C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master
+2026-11-27 09:01:38,726 ERROR Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:38,727 ERROR Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-11-27 09:01:38,786 INFO Use pytorch device: cpu
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.01it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  2.01it/s]
+{'group': 'tk10', 'chunk_size': 512, 'chunk_overlap': 100, 'top_k': 10, 'hit_rate': 0.75, 'accuracy': 'N/A(未调LLM)', 'index_time_s': 1.98, 'avg_latency_s': 'N/A'}
+
+结果表已保存: results\evaluation.csv
+2026-11-27 09:01:39,347 INFO Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-11-27 09:01:39,347 INFO Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-11-27 09:01:39,351 INFO Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-11-27 09:01:39,351 INFO Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-11-27 09:01:39,354 INFO Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-11-27 09:01:39,355 INFO Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+对比图已保存: results\param_compare.png

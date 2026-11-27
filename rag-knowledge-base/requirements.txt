@@ -2,9 +2,10 @@
 # 注意：请务必用 Python 3.10，Python 3.13 下部分依赖装不上
 langchain==0.3.7
 langchain-community==0.3.7
-langchain-core==0.3.15
-langchain-classic==1.0.0        # 0.3.x 后 EnsembleRetriever/ContextualCompression 迁到这里
+langchain-core>=0.3.29,<0.4.0
 langchain-text-splitters==0.3.5
+# 说明：EnsembleRetriever / ContextualCompression 在 0.3.x 位于 langchain.retrievers，
+# retrieve.py 已用 try/except 兼容 1.0 的 langchain_classic 路径，故不装 langchain-classic（会与 0.3.7 冲突）
 chromadb==0.5.23
 sentence-transformers==3.3.1
 rank-bm25==0.2.2

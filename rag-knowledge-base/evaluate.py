@@ -12,6 +12,14 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
+# 中文图表：优先用系统中文字体，避免标题/坐标轴的中文变成方框
+from matplotlib import font_manager
+for font in ("Microsoft YaHei", "SimHei", "Microsoft JhengHei", "SimSun"):
+    if any(f.name == font for f in font_manager.fontManager.ttflist):
+        plt.rcParams["font.sans-serif"] = [font]
+        plt.rcParams["axes.unicode_minus"] = False
+        break
+
 import config
 from ingest import build
 from retrieve import answer

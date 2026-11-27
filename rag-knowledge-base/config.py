@@ -5,6 +5,9 @@ import os
 # 若已自行配好代理，可删除这一行。
 os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
 
+# 关闭 chromadb 匿名遥测（否则每次运行刷一堆 capture() 报错日志，不影响功能但干扰截图）
+os.environ.setdefault("ANONYMIZED_TELEMETRY", "False")
+
 # ===== LLM 后端选择 =====
 # "deepseek" -> 用 DeepSeek API，需设置环境变量 DEEPSEEK_API_KEY
 # "ollama"   -> 本地 Ollama，需先 ollama pull qwen2.5:7b（免费，慢一些）
@@ -18,7 +21,11 @@ OLLAMA_BASE_URL = "http://localhost:11434"
 OLLAMA_MODEL = "qwen2.5:7b"
 
 # ===== Embedding（手册指定，本地免 API 费）=====
+# 国内直连 huggingface.co 的 Xet CDN 常超时，模型改用 modelscope（魔搭）下载到本地后加载。
+# 下载命令见 README 第〇节；若已能直连 HF，可把下面两行改成 HF 的 model id。
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+LOCAL_EMBEDDING_PATH = r"C:\Users\PC\.cache\modelscope\models\sentence-transformers--all-MiniLM-L6-v2\snapshots\master"
+LOCAL_RERANK_PATH = r"C:\Users\PC\.cache\modelscope\models\cross-encoder--ms-marco-MiniLM-L6-v2\snapshots\master"
 
 # ===== 切块与检索默认参数 =====
 CHUNK_SIZE = 512

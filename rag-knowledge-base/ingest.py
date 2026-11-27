@@ -61,7 +61,10 @@ def build(chunk_size, chunk_overlap, db_dir, rebuild=True):
     )
     chunks = splitter.split_documents(docs)
 
-    embeddings = HuggingFaceEmbeddings(model_name=config.EMBEDDING_MODEL)
+    # 优先用魔搭本地路径（国内可直连下载），无本地缓存时回退 HF model id
+    model_path = config.LOCAL_EMBEDDING_PATH if os.path.isdir(config.LOCAL_EMBEDDING_PATH) else config.EMBEDDING_MODEL
+    print(f"[info] Embedding 模型来源: {model_path}")
+    embeddings = HuggingFaceEmbeddings(model_name=model_path)
     Chroma.from_documents(chunks, embeddings, collection_name=config.COLLECTION,
                           persist_directory=db_dir)
 
